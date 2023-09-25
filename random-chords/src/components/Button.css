@@ -29,17 +29,17 @@ body, html {
 }
 
 .smaller {
-  font-size: calc(50px + 2vh); /* Responsive font size based on viewport height */
+  font-size: calc(50px + 4vh); /* Responsive font size based on viewport height */
 }
 
 .larger {
-  font-size: calc(90px + 2vh); /* Responsive font size based on viewport height */
+  font-size: calc(90px + 4vh); /* Responsive font size based on viewport height */
 }
 
 .inversion {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #2b6777;
-  font-size: calc(40px + 2vh);
+  font-size: calc(40px + 4vh);
   margin: 0;
 }
 
