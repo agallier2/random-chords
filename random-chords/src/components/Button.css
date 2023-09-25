@@ -1,0 +1,75 @@
+/* Reset the default margin and padding for the body and html elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #c8d8e4;
+}
+
+/* Base styles for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh; /* Minimum viewport height to prevent scrollbars */
+  padding: 20px;
+  padding-top: 20vh;
+}
+
+.centeredElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the text */
+.text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #2b6777;
+}
+
+.smaller {
+  font-size: calc(50px + 2vh); /* Responsive font size based on viewport height */
+}
+
+.larger {
+  font-size: calc(90px + 2vh); /* Responsive font size based on viewport height */
+}
+
+.inversion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #2b6777;
+  font-size: calc(40px + 2vh);
+  margin: 0;
+}
+
+/* Style for the button */
+.button {
+  background-color: #2b6777;
+  color: #c8d8e4;
+  padding: 20px 40px;
+  font-size: calc(30px + 1vh); /* Responsive font size based on viewport height */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20vh;
+}
+
+.button:active {
+  transform: scale(0.95); /* Adjust the scale factor as needed */
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  /* Adjust font size and padding for smaller screens */
+  .text {
+    font-size: calc(14px + 1vh);
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font-size: calc(12px + 1vh);
+    padding: 8px 16px;
+  }
+}

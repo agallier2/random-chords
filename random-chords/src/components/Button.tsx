@@ -37,9 +37,14 @@ export default function Button() {
 
   return (
   <>
-  <p>{note}{quality} {inversion}</p>
-  <div className="button" onClick={handleButtonClick}>
-    Change it
+  <div className="container">
+    <div className="centeredElements">
+    <p className="text centerText"><span className="larger">{note}</span><span className="smaller">{quality}</span></p>
+  <p className="inversion centerText">{inversion}</p>
+    </div>
+  <button className="button" onClick={handleButtonClick}>
+    New chord
+  </button>
   </div>
   </>
   );
